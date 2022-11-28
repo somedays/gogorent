@@ -231,6 +231,21 @@ body {background-color:#222;}
 .policy-box .policy-btnarea {text-align:center;padding-top:10px;}
 .policy-box .policy-btn {display:inline-block;border:0 none;height:2.6rem;line-height:2.5rem;padding:0 3rem;cursor:pointer;border-radius:1.3rem;font-size:1.2rem;font-weight:800;background-color:#fff100;border:1px solid #333;vertical-align:middle;color:#000;}
 
+.gogo_main_pop {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.7);z-index:90;opacity:0;pointer-events:none;}
+.gogo_main_pop.on {opacity:1;transition:all 1s;pointer-events:auto;z-index:99;}
+.gogo_main_pop .popup_wrap {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0;}
+.gogo_main_pop.on .popup_wrap {opacity:1;}
+.gogo_main_pop .pop_img {background-color:#fff;}
+.gogo_main_pop .pop_img img {width:500px;height:500px;}
+.gogo_main_pop .pop_img img.pop_img_pc {display:block;}
+.gogo_main_pop .pop_img img.pop_img_mobile {display:none;}
+.gogo_main_pop .pop_btns {width:500px;text-align:center;}
+.gogo_main_pop .pop_btns a {position:relative;display:inline-block;font-size:0;text-align:center;color:#fff;font-size:2rem;}
+.gogo_main_pop .pop_btns .go_contract {width:100%;height:8rem;font-size:2.4rem;line-height:8rem;}
+.gogo_main_pop .pop_btns .pop_btn {width:48%;height:5rem;line-height:5rem;color:#fff;}
+.gogo_main_pop .pop_btns .pop_btn:nth-child(2):after {content:"";position:absolute;right:-1px;top:1.5rem;display:block;height:2rem;width:2px;background-color:#fff;}
+
+
 .popup {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.7);z-index:90;opacity:0;pointer-events:none;}
 .popup.on {opacity:1;transition:all 1s;pointer-events:auto;z-index:99;}
 .popup .popup-wrap {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#fff;width:550px;border-radius:10px;opacity:0;}
@@ -313,6 +328,9 @@ body {background-color:#222;}
     .gogo_bar {width:100%;}
     .gogo_bar {height:14rem;}
     .gogo_bar .bar_item {height:12rem;}
+    .gogo_main_pop .pop_img img {width:450px;height:600px;}
+    .gogo_main_pop .pop_btns {width:450px;}
+
 }
 
 @media screen and (max-width: 520px) {
