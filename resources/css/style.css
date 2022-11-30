@@ -235,7 +235,6 @@ body {background-color:#222;}
 .gogo_main_pop.on {opacity:1;transition:all 1s;pointer-events:auto;z-index:99;}
 .gogo_main_pop .popup_wrap {position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0;}
 .gogo_main_pop.on .popup_wrap {opacity:1;}
-.gogo_main_pop .pop_img {background-color:#fff;}
 .gogo_main_pop .pop_img img {width:500px;height:500px;}
 .gogo_main_pop .pop_img img.pop_img_pc {display:block;}
 .gogo_main_pop .pop_img img.pop_img_mobile {display:none;}
@@ -328,8 +327,11 @@ body {background-color:#222;}
     .gogo_bar {width:100%;}
     .gogo_bar {height:14rem;}
     .gogo_bar .bar_item {height:12rem;}
-    .gogo_main_pop .pop_img img {width:450px;height:600px;}
-    .gogo_main_pop .pop_btns {width:450px;}
+    .gogo_main_pop .popup_wrap {top:50%;left:5%;right:5%;transform:translate(0,-50%);}
+    .gogo_main_pop .pop_img img.pop_img_pc {display:none;}
+    .gogo_main_pop .pop_img img.pop_img_mobile {display:block;}
+    .gogo_main_pop .pop_img img {width:100%;max-width:100%;height:auto;}
+    .gogo_main_pop .pop_btns {width:100%;}
 
 }
 
