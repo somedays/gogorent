@@ -317,6 +317,7 @@ body {background-color:#222;}
   .gogo_bar {left:auto;right:auto;margin:0 auto;}
   .gogo_popup {position:relative;left:auto;right:auto;width:64rem;margin:0 auto;}
   .gogo_popup:before {left:0;right:0;width:100%;height:100vh;margin:0;max-width:100%;}
+  .gogo_pop_body {min-height:calc(100vh - 10rem);}
 }
 
 @media screen and (max-width: 640px) {
@@ -327,7 +328,7 @@ body {background-color:#222;}
     .gogo_bar {width:100%;}
     .gogo_bar {height:14rem;}
     .gogo_bar .bar_item {height:12rem;}
-    .gogo_main_pop .popup_wrap {top:50%;left:5%;right:5%;transform:translate(0,-50%);}
+    .gogo_main_pop .popup_wrap {top:50%;left:10%;right:10%;transform:translate(0,-50%);}
     .gogo_main_pop .pop_img img.pop_img_pc {display:none;}
     .gogo_main_pop .pop_img img.pop_img_mobile {display:block;}
     .gogo_main_pop .pop_img img {width:100%;max-width:100%;height:auto;}
