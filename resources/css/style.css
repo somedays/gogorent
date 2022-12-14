@@ -28,7 +28,7 @@ body {background-color:#222;}
 .gogo_main_head_deal .deal_item .item_top {overflow:hidden}
 .gogo_main_head_deal .deal_item .item_top img {max-width:100%;transition:filter .3s;object-fit:cover;}
 .gogo_main_head_deal .deal_item:hover .item_top img {filter: contrast(120%);}
-.gogo_main_head_deal .deal_item .item_btm {position:absolute;bottom:0;left:0;right:0;background-color:#000;padding:1rem 3rem 1.3rem 3rem;color:#fff;text-align:left;}
+.gogo_main_head_deal .deal_item .item_btm {background-color:#000;padding:1rem 3rem 1.3rem 3rem;color:#fff;text-align:left;}
 .gogo_main_head_deal .deal_item .item_btm strong {display:block;font-size:2rem;}
 .gogo_main_head_deal .deal_item .item_btm span {display:block;font-size:1.5rem;color:#999999;}
 
