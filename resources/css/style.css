@@ -19,19 +19,22 @@ body {background-color:#222;}
 .gogo_main_head_deal h3 {position:relative;text-align:center;margin-top:1.5rem;padding:1.5rem 0 2.5rem 0;color:#fff;}
 .gogo_main_head_deal h3:before {content:"";position:absolute;top:0;left:50%;margin-left:-1.3rem;width:2.6rem;height:3px;background-color:#ff7a00;}
 .gogo_main_head_deal h3 strong {font-size:3rem;letter-spacing:.3rem;font-weight:700;}
-.gogo_main_head_deal a {position:absolute;top:21px;right:0;color:#fff;background-color:#ff7a00;width:3.2rem;height:3.2rem;line-height:3.0rem;text-align:center;font-size:2rem;letter-spacing:0;}
-.gogo_main_head_deal a:hover {background-color:#ff7a00;color:#fff;}
-.gogo_main_head_deal .deal_list {display:flex;}
-.gogo_main_head_deal .deal_item {position:relative;margin:0 0.1rem;cursor:pointer;flex:1;max-width:33.333333%;}
+.gogo_main_head_deal a {position:absolute;top:21px;right:0;color:#fff;background-color:#f93b06;width:3.2rem;height:3.2rem;line-height:3.0rem;text-align:center;font-size:2rem;letter-spacing:0;}
+.gogo_main_head_deal a:hover {background-color:#e13a0c;color:#fff;}
+.gogo_main_head_deal .deal_item {position:relative;margin:0 0.1rem;cursor:pointer;}
 .gogo_main_head_deal .deal_item .car_info {position:absolute;top:1rem;left:1rem;right:1rem;color:#fff;z-index:1;}
 .gogo_main_head_deal .deal_item .car_info strong {display:block;font-size:1.8rem;}
 .gogo_main_head_deal .deal_item .car_info span {display:block;font-size:1.3rem;}
-.gogo_main_head_deal .deal_item .item_top {overflow:hidden;height:22rem;display:flex;justify-content:center;}
+.gogo_main_head_deal .deal_item .item_top {overflow:hidden}
 .gogo_main_head_deal .deal_item .item_top img {max-width:100%;transition:filter .3s;object-fit:cover;}
-.gogo_main_head_deal .deal_item:hover .item_top img {filter: contrast(150%);}
-.gogo_main_head_deal .deal_item .item_btm {background-color:#000;padding:1rem 1rem 1.3rem 1rem;color:#fff;text-align:center;}
+.gogo_main_head_deal .deal_item:hover .item_top img {filter: contrast(120%);}
+.gogo_main_head_deal .deal_item .item_btm {position:absolute;bottom:0;left:0;right:0;background-color:#000;padding:1rem 3rem 1.3rem 3rem;color:#fff;text-align:left;}
 .gogo_main_head_deal .deal_item .item_btm strong {display:block;font-size:2rem;}
 .gogo_main_head_deal .deal_item .item_btm span {display:block;font-size:1.5rem;color:#999999;}
+
+.owl-carousel.deal_list .owl-dots {text-align:center;}
+.owl-carousel.deal_list button.owl-dot {width:1rem;height:1rem;border-radius:1rem;background:#fff;margin:0 .3rem;}
+.owl-carousel.deal_list button.owl-dot.active {width:3rem;background:#ff7a00;}
 
 .gogo_main_hot_car {padding:2rem 2rem 4rem 2rem;background-color:#ececec;}
 
@@ -116,8 +119,8 @@ body {background-color:#222;}
 .gogo_direct_list h3 {position:relative;text-align:center;margin-top:1.5rem;padding:1.5rem 0 2.5rem 0;color:#000;}
 .gogo_direct_list h3:before {content:"";position:absolute;top:0;left:50%;margin-left:-1.3rem;width:2.6rem;height:3px;background-color:#ff7a00;}
 .gogo_direct_list h3 strong {font-size:3rem;letter-spacing:.3rem;font-weight:700;}
-.gogo_direct_list a {position:absolute;top:21px;right:0;color:#fff;background-color:#ff7a00;width:3.2rem;height:3.2rem;line-height:3.0rem;text-align:center;font-size:2rem;letter-spacing:0;}
-.gogo_direct_list a:hover {background-color:#ff7a00;color:#fff;}
+.gogo_direct_list a {position:absolute;top:21px;right:0;color:#fff;background-color:#f93b06;width:3.2rem;height:3.2rem;line-height:3.0rem;text-align:center;font-size:2rem;letter-spacing:0;}
+.gogo_direct_list a:hover {background-color:#e13a0c;color:#fff;}
 .gogo_direct_list .direct_update {color:#777;font-size:2rem;}
 .gogo_direct_list .direct_item {position:relative;border:2px solid #eae8e8;transition:all .3s;display:flex;align-items:center;padding:1.5rem;margin-top:2rem;}
 .gogo_direct_list .direct_item:hover {border-color:#ff7a00;}
@@ -132,8 +135,8 @@ body {background-color:#222;}
 .gogo_direct_list .direct_item .item_info .car_price span {color:#777;}
 .gogo_direct_list .direct_item .item_info .car_date span {display:inline-block;font-size:2rem;color:#333;font-weight:600;}
 .gogo_direct_list .direct_item .item_info .car_date strong {display:inline-block;font-size:2rem;color:#ff6000;font-weight:600;padding-left:.5rem;}
-.gogo_direct_list .direct_item .item_info .item_btn {margin-top:2rem;width:5rem;height:5rem;background:url(../img/direct_btn.png) 0 0 no-repeat;background-size:100%;cursor:pointer;opacity:0.5;}
-.gogo_direct_list .direct_item .item_info .item_btn:hover {opacity:1;}
+.gogo_direct_list .direct_item .item_info .item_btn {display:inline-block;margin-top:2rem;line-height:4rem;padding:0 2rem;cursor:pointer;border:2px solid #7f7f7f;font-size:2.3rem;font-weight:600;color:#7f7f7f;border-radius:1rem;}
+.gogo_direct_list .direct_item .item_info .item_btn:hover {border-color:#5f5f5f;color:#5f5f5f;}
 
 .gogo_hotdeal_head {text-align:center;padding:3rem 2rem 5rem 2rem;font-size:2.2rem;}
 .gogo_hotdeal_head p {text-align:left;}
@@ -151,8 +154,8 @@ body {background-color:#222;}
 .gogo_hotdeal_list .hotdeal_item .item_info .car_info.primary span {color:#333;font-weight:600;}
 .gogo_hotdeal_list .hotdeal_item .item_info .car_info.primary strong {color:#ff7a00;font-weight:600;display:inline-block;padding-left:1rem;}
 
-.gogo_hotdeal_list .hotdeal_item .item_info .item_btn {position:absolute;bottom:2rem;right:2rem;margin-top:1rem;width:5rem;height:5rem;background:url(../img/hotdeal_btn.png) 0 0 no-repeat;background-size:100%;cursor:pointer;}
-.gogo_hotdeal_list .hotdeal_item .item_info .item_btn:hover {background-image:url(../img/direct_btn_o.png);}
+.gogo_hotdeal_list .hotdeal_item .item_info .item_btn {position:absolute;bottom: 2rem;left: 7.5rem;margin-top:1rem;height:4rem;background:url(../img/hotdeal_btn_w.png) 0 0 no-repeat;background-size: 3rem 3.5rem;cursor:pointer;padding-left: 4rem;}
+.gogo_hotdeal_list .hotdeal_item .item_info .item_btn:after {content:"상세보기";font-size: 2rem;font-weight:600;color:#fff;line-height: 3.5rem;}
 
 
 .gogo_popup {position:fixed;top:0;left:50%;right:0;max-width:64rem;margin:0 auto;max-height:100vh;overflow:auto;z-index:20;display:none;margin-left:-111px;}

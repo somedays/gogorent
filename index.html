@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="resources/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 </head>
 <body>
@@ -31,28 +32,26 @@
                         <strong>핫딜</strong>
                         <a href="#">+</a>
                     </h3>
-                    <div class="deal_list">
+                    <div class="owl-carousel deal_list">
                         <div class="deal_item">
-                            <div class="item_top">
-                                <img src="http://leadersautosolution.devsmartdirectcar.com/files/hot/b30ab4f5949545aebc5748f57e91a3d4_61839_136317_5956.jpg" alt="main_deal">
-                            </div>
+                            <div class="item_top"><img src="resources/img/main_hot_deal_sample.png" alt="main_deal"></div>
                             <div class="item_btm">
-                                <strong>1,250만원 할인</strong>
-                                <span>[ 월 88 만원 ]</span>
+                                <span>디 올 뉴 그랜저</span>
+                                <strong>월 38 만원</strong>
                             </div>
                         </div>
                         <div class="deal_item">
-                            <div class="item_top"><img src="http://leadersautosolution.devsmartdirectcar.com/files/hot/27a444228bca422e8ba8efadf943d1de_MH3D2TBJP4PJFEJ2ZYS4VFJ6EU.jpg" alt="main_deal"></div>
+                            <div class="item_top"><img src="resources/img/main_hot_deal_sample.png" alt="main_deal"></div>
                             <div class="item_btm">
-                                <strong>1,250만원 할인</strong>
-                                <span>[ 월 88 만원 ]</span>
+                                <span>디 올 뉴 그랜저</span>
+                                <strong>월 38 만원</strong>
                             </div>
                         </div>
                         <div class="deal_item">
-                            <div class="item_top"><img src="http://leadersautosolution.devsmartdirectcar.com/files/hot/c509b66e02454c0dabff72582e573ec0_bmw-x7-inspire-radiating-presence-01.jpg" alt="main_deal"></div>
+                            <div class="item_top"><img src="resources/img/main_hot_deal_sample.png" alt="main_deal"></div>
                             <div class="item_btm">
-                                <strong>1,250만원 할인</strong>
-                                <span>[ 월 88 만원 ]</span>
+                                <span>디 올 뉴 그랜저</span>
+                                <strong>월 38 만원</strong>
                             </div>
                         </div>
                     </div>
@@ -75,7 +74,7 @@
                             <strong>9,395 만원</strong>
                         </div>
                         <div class="car_date"><span>출고가능시기 :</span><strong>2주 이내</strong></div>
-                        <div class="item_btn"></div>
+                        <div class="item_btn">상담신청</div>
                     </div>
                 </div>
                 <div class="direct_item">
@@ -89,7 +88,7 @@
                             <strong>9,395 만원</strong>
                         </div>
                         <div class="car_date"><span>출고가능시기 :</span><strong>2주 이내</strong></div>
-                        <div class="item_btn"></div>
+                        <div class="item_btn">상담신청</div>
                     </div>
                 </div>
                 <div class="direct_item">
@@ -103,7 +102,7 @@
                             <strong>9,395 만원</strong>
                         </div>
                         <div class="car_date"><span>출고가능시기 :</span><strong>2주 이내</strong></div>
-                        <div class="item_btn"></div>
+                        <div class="item_btn">상담신청</div>
                     </div>
                 </div>
             </div>
@@ -193,7 +192,7 @@
 </div>
 
 <!-- 견적 문의 -->
-<div class="gogo_popup contract on">
+<div class="gogo_popup contract">
     <div class="gogo_pop_warp">
         <div class="gogo_header">
             <strong>견적문의</strong>
@@ -435,6 +434,7 @@
 </div>
 <script
   src="https://www.smartdirectcar.com/renewalresources/js/jquery-2.2.4.min.js"></script>
+  <script src="resources/js/owl.carousel.min.js"></script>
 <script>
 let contractPop = $('.gogo_popup.contract');
 let closeBtn = $('.header_btn');
@@ -442,6 +442,15 @@ let closeBtn = $('.header_btn');
 closeBtn.click(function(){
     contractPop.removeClass('on');
 });
+
+
+$('.owl-carousel.deal_list').owlCarousel({
+    loop:true,
+    margin:0,
+    dots:true,
+    nav:false,
+    items:1
+})
 
 </script>
 </body>
