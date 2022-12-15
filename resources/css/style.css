@@ -181,7 +181,7 @@ body {background-color:#222;}
 .gogo_pop_head.hotdeal .hotdeal_head {position:relative;z-index:2;}
 .gogo_pop_head.hotdeal .hotdeal_head:before {content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.4);z-index:3;}
 .gogo_pop_head.hotdeal .hotdeal_head .car_img {height:25rem;display:flex;justify-content:center;align-items:center;}
-.gogo_pop_head.hotdeal .hotdeal_head .car_img img {object-fit:cover;max-width:100%;object-fit: cover;}
+.gogo_pop_head.hotdeal .hotdeal_head .car_img img {object-fit:cover;height:100%;object-fit: cover;}
 .gogo_pop_head.hotdeal .hotdeal_head .car_info {position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;flex-direction:column;z-index:4;}
 .gogo_pop_head.hotdeal .hotdeal_head .car_info strong {display:block;text-align:center;line-height:1.5;font-size:4rem;}
 .gogo_pop_head.hotdeal .hotdeal_head .car_info span {display:block;text-align:center;line-height:1.2;font-size:2.4rem;}
