@@ -27,6 +27,12 @@
                 <div class="bar_item" onclick="$('.gogo_popup.contract').addClass('on');$('body').addClass('lock')"></div><!-- 견적 문의 -->
             </div>
             <div class="gogo_main_head">
+                <div class="gogo_main_visual_box">
+                    <div class="owl-carousel gogo_main_visual">
+                        <div class="visual_item"><img src="resources/img/gogo_kv1.jpg" alt="main_visual"></div>
+                        <div class="visual_item"><img src="resources/img/gogo_kv2.jpg" alt="main_visual"></div>
+                    </div>
+                </div>
                 <div class="gogo_main_head_deal">
                     <h3>
                         <strong>핫딜</strong>
@@ -34,21 +40,21 @@
                     </h3>
                     <div class="owl-carousel deal_list">
                         <div class="deal_item">
-                            <div class="item_top"><img src="resources/img/main_hot_deal_sample.png" alt="main_deal"></div>
+                            <div class="item_top"><img src="https://gogoautorent.com/files/hot/3977909d087043089d8256330f5f3890_grandeur.jpg" alt="main_deal"></div>
                             <div class="item_btm">
                                 <span>디 올 뉴 그랜저</span>
                                 <strong>월 38 만원</strong>
                             </div>
                         </div>
                         <div class="deal_item">
-                            <div class="item_top"><img src="resources/img/main_hot_deal_sample.png" alt="main_deal"></div>
+                            <div class="item_top"><img src="https://gogoautorent.com/files/hot/1294f46f70044e7f8ff21565c3608ff3_530i.jpg" alt="main_deal"></div>
                             <div class="item_btm">
                                 <span>디 올 뉴 그랜저</span>
                                 <strong>월 38 만원</strong>
                             </div>
                         </div>
                         <div class="deal_item">
-                            <div class="item_top"><img src="resources/img/main_hot_deal_sample.png" alt="main_deal"></div>
+                            <div class="item_top"><img src="https://gogoautorent.com/files/hot/a8af34f322bb40079189f3b62d3b3999_520i.jpg" alt="main_deal"></div>
                             <div class="item_btm">
                                 <span>디 올 뉴 그랜저</span>
                                 <strong>월 38 만원</strong>
@@ -444,13 +450,31 @@ closeBtn.click(function(){
 });
 
 
-$('.owl-carousel.deal_list').owlCarousel({
+var visual = $('.owl-carousel.gogo_main_visual');
+visual.owlCarousel({
+    margin: 0,
+    loop: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    items:1
+});
+
+var owl = $('.owl-carousel.deal_list');
+owl.owlCarousel({
     loop:true,
     margin:0,
     dots:true,
     nav:false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     items:1
-})
+});
+
+
 
 </script>
 </body>
